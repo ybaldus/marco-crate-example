@@ -1,0 +1,47 @@
+name: CI # Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+      - uses: Swatinem/rust-cache@v2
+      - uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: --all-features --workspace
+
+  rustfmt:
+    name: Rustfmt
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+          components: rustfmt
+      - uses: Swatinem/rust-cache@v2
+      - name: Check formatting
+        uses: actions-rs/cargo@v1
+        with:
+          command: fmt
+          args: --all -- --check
