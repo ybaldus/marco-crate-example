@@ -4,8 +4,9 @@ permissions:
   contents: write
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - "*"
 
 env:
   CARGO_INCREMENTAL: 0
@@ -23,7 +24,6 @@ defaults:
 jobs:
   upload-assets:
     name: ${{ matrix.target }}
-    if: github.repository_owner == 'MarcoIeni'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
