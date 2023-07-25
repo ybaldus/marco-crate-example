@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.12](https://github.com/MarcoIeni/marco-crate-example/compare/v0.1.11...v0.1.12) - 2023-07-25
+
+### Other
+- wip
+
 ## [0.1.11](https://github.com/MarcoIeni/marco-crate-example/compare/v0.1.10...v0.1.11) - 2023-07-23
 
 ### Other
