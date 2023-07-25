@@ -1,0 +1,8 @@
+[registries.ieni]
+index = "ssh://git@ssh.shipyard.rs/ieni/crate-index.git"
+
+[net]
+git-fetch-with-cli = true
+
+[registries.crates-io-http]
+index = "sparse+https://index.crates.io/"
