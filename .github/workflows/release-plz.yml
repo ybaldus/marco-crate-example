@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.PAT_FINE }}
       - name: Run release-plz
-        uses: MarcoIeni/release-plz-action@v0.5
+        uses: MarcoIeni/release-plz-action@main
         with:
           command: release-pr
         env:
