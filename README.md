@@ -1,5 +1,7 @@
 # marco-crate-example
 
+Just for testing release-plz.
+
 [![Crates.io](https://img.shields.io/crates/v/marco-crate-example.svg)](https://crates.io/crates/marco-crate-example)
 [![Docs.rs](https://docs.rs/marco-crate-example/badge.svg)](https://docs.rs/marco-crate-example)
 [![CI](https://github.com/MarcoIeni/marco-crate-example/workflows/CI/badge.svg)](https://github.com/MarcoIeni/marco-crate-example/actions)
