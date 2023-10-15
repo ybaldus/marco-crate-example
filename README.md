@@ -1,4 +1,4 @@
-# marco-crate-example
+# Crate example
 
 Just for testing [release-plz](https://release-plz.ieni.dev/).
 
